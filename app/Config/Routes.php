@@ -47,8 +47,8 @@ $routes->get('portofolio', 'Portofolio::index');
 $routes->get('portofolio/add', 'Portofolio::create');
 $routes->post('portofolio', 'Portofolio::store');
 $routes->get('portofolio/edit/(:num)', 'Portofolio::edit/$1');
-$routes->post('portofolio/update/(:num)', 'Portofolio::update/$1'); 
-$routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1'); 
+$routes->post('portofolio/update/(:num)', 'Portofolio::update/$1');
+$routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1');
 
 $routes->get('about', 'About::index');
 
