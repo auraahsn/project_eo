@@ -35,8 +35,39 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('create-db', function () {
+    $forge = \Config\Database::forge();
+    if ($forge->createDatabase('eoyama_db')) {
+        echo 'Database created!';
+    }
+});
+
 $routes->get('/', 'Home::index');
 $routes->get('portofolio', 'Portofolio::index');
+$routes->get('portofolio/add', 'Portofolio::create');
+$routes->post('portofolio', 'Portofolio::store');
+$routes->get('portofolio/edit/(:num)', 'Portofolio::edit/$1');
+$routes->post('portofolio/update/(:num)', 'Portofolio::update/$1'); 
+$routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1'); 
+
+$routes->get('about', 'About::index');
+
+$routes->get('pemesanan', 'PemesananController::index');
+$routes->get('pemesanan/add', 'PemesananController::create');
+$routes->post('pemesanan', 'PemesananController::store');
+$routes->get('pemesanan/edit/(:num)', 'PemesananController::edit/$1');
+$routes->put('pemesanan/(:any)', 'PemesananController::update/$1');
+$routes->delete('pemesanan/(:segment)', 'PemesananController::destroy/$1');
+
+// $routes->get('calendar', 'FullCalendar::index');
+
+$routes->get('events', 'JadwalController::index');
+$routes->get('events/add', 'JadwalController::create');
+$routes->post('events', 'JadwalController::store');
+$routes->get('events/edit/(:num)', 'JadwalController::edit/$1');
+$routes->put('events/(:any)', 'JadwalController::update/$1');
+$routes->delete('events/(:segment)', 'JadwalController::destroy/$1');
+
 
 /*
  * --------------------------------------------------------------------
