@@ -59,6 +59,9 @@ $routes->get('pemesanan/edit/(:num)', 'PemesananController::edit/$1');
 $routes->put('pemesanan/(:any)', 'PemesananController::update/$1');
 $routes->delete('pemesanan/(:segment)', 'PemesananController::destroy/$1');
 
+$routes->get('events', 'JadwalController::index');
+$routes->get('events/add', 'JadwalController::create');
+$routes->post('events', 'JadwalController::store');
 // $routes->get('calendar', 'FullCalendar::index');
 
 
