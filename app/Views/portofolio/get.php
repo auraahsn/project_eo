@@ -5,9 +5,6 @@
 <section class="section">
     <div class="section-header">
         <h1>Portofolio</h1>
-        <div class="section-header-button">
-            <a href="<?= site_url('portofolio/add') ?>" class="btn btn-primary">Add</a>
-        </div>
     </div>
 
     <?php if (session()->getFlashdata('status')) {
@@ -15,6 +12,10 @@
     } ?>
 
     <div class="section-body">
+    <div>
+            <a href="<?= site_url('portofolio/add') ?>" ><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>  Tambah Data</button></a>
+        </div>
+        <br>
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">

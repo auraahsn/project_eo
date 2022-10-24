@@ -9,9 +9,7 @@
 <section class="section">
     <div class="section-header">
         <h1>Jadwal</h1>
-        <div class="section-header-button">
-            <a href="<?= site_url('events/add') ?>" class="btn btn-primary">Add</a>
-        </div>
+
     </div>
 
     <?php if (session()->getFlashData('success')) : ?>
@@ -67,6 +65,9 @@
 
                     </tbody>
                 </table>
+                <div>
+                    <a href="<?= site_url('events/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
+                </div>
             </div>
         </div>
     </div>
