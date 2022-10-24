@@ -53,9 +53,6 @@ $routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1');
 $routes->get('about', 'About::index');
 
 
-$routes->get('pemesanan/edit/(:num)', 'PemesananController::edit/$1');
-$routes->put('pemesanan/(:any)', 'PemesananController::update/$1');
-$routes->delete('pemesanan/(:segment)', 'PemesananController::destroy/$1');
 
 $routes->get('events', 'JadwalController::index');
 $routes->get('events/add', 'JadwalController::create');
