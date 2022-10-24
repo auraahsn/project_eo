@@ -21,6 +21,7 @@ class Filters extends BaseConfig
         'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
+        'isLoggedIn'=>\App\Filters\LoginFilter::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
     ];
@@ -68,5 +69,9 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'isLoggedIn' =>['before'=>[
+            'home','pemesanan','pemesanan/*','events','events/*','portofolio','portofolio','about'
+        ]]
+    ];
 }

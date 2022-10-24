@@ -47,6 +47,7 @@ $routes->post('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
+$routes->get('auth/logout', 'Auth::logout');
 $routes->get('portofolio', 'Portofolio::index');
 $routes->get('portofolio/add', 'Portofolio::create');
 $routes->post('portofolio', 'Portofolio::store');
