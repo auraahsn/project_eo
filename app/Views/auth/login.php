@@ -37,7 +37,17 @@
                             </div>
 
                             <div class="card-body">
-                                <form method="POST" action="#" class="needs-validation" novalidate="">
+                            <?php if (session()->getFlashData('error')) : ?>
+                                    <div class="alert alert-danger alert-dismissible show fade">
+                                        <div class="alert-boy">
+                                            <button class="close" data-dismiss="alert">x</button>
+                                            <b>Error !</b>
+                                            <?= session()->getFlashdata('error') ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            <form method="POST" action="<?= site_url('auth/loginProcess') ?>" class="needs-validation" novalidate="">
+                                    <?= csrf_field() ?>
                                     <div class="form-group">
                                         <label for="username">Username</label>
                                         <input id="username" type="text" class="form-control" name="username" tabindex="1" required autofocus>

@@ -43,7 +43,10 @@ $routes->get('create-db', function () {
 });
 
 $routes->get('login', 'Auth::login');
+$routes->post('auth/loginProcess', 'Auth::loginProcess');
+$routes->get('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('/', 'Home::index');
+$routes->get('home', 'Home::index');
 $routes->get('portofolio', 'Portofolio::index');
 $routes->get('portofolio/add', 'Portofolio::create');
 $routes->post('portofolio', 'Portofolio::store');
