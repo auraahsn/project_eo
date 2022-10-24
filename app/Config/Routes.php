@@ -52,9 +52,7 @@ $routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1');
 
 $routes->get('about', 'About::index');
 
-$routes->get('pemesanan', 'PemesananController::index');
-$routes->get('pemesanan/add', 'PemesananController::create');
-$routes->post('pemesanan', 'PemesananController::store');
+
 $routes->get('pemesanan/edit/(:num)', 'PemesananController::edit/$1');
 $routes->put('pemesanan/(:any)', 'PemesananController::update/$1');
 $routes->delete('pemesanan/(:segment)', 'PemesananController::destroy/$1');
