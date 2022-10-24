@@ -55,10 +55,16 @@ $routes->get('about', 'About::index');
 $routes->get('pemesanan', 'PemesananController::index');
 $routes->get('pemesanan/add', 'PemesananController::create');
 $routes->post('pemesanan', 'PemesananController::store');
+$routes->get('pemesanan/edit/(:num)', 'PemesananController::edit/$1');
+$routes->put('pemesanan/(:any)', 'PemesananController::update/$1');
+$routes->delete('pemesanan/(:segment)', 'PemesananController::destroy/$1');
 
 $routes->get('events', 'JadwalController::index');
 $routes->get('events/add', 'JadwalController::create');
 $routes->post('events', 'JadwalController::store');
+$routes->get('events/edit/(:num)', 'JadwalController::edit/$1');
+$routes->put('events/(:any)', 'JadwalController::update/$1');
+$routes->delete('events/(:segment)', 'JadwalController::destroy/$1');
 // $routes->get('calendar', 'FullCalendar::index');
 
 
