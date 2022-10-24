@@ -27,7 +27,10 @@ class Pemesanan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'tanggal_acara' => [
+            'tanggal_mulai' => [
+                'type' => 'DATE',
+            ],
+            'tanggal_selesai' => [
                 'type' => 'DATE',
             ],
             'deskripsi_acara' => [

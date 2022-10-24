@@ -36,8 +36,12 @@
                         <input type="text" name="jenis_acara" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>Tanggal Acara</label>
-                        <input type="date" name="tanggal_acara" class="form-control" required>
+                        <label>Tanggal Mulai</label>
+                        <input type="date" name="tanggal_mulai" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Selesai</label>
+                        <input type="date" name="tanggal_selesai" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Deskripsi Acara</label>

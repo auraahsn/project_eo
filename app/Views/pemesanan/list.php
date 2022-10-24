@@ -43,7 +43,8 @@
                             <th>Nama Pemesan</th>
                             <th>No Telepon</th>
                             <th>Jenis Acara</th>
-                            <th>Tanggal Acara</th>
+                            <th>Tanggal Mulai</th>
+                            <th>Tanggal Selesai</th>
                             <th>Deskripsi Acara</th>
                             <th>Status</th>
                         </tr>
@@ -53,7 +54,8 @@
                                 <td><?= $value->nama_pemesan ?></td>
                                 <td><?= $value->telepon ?></td>
                                 <td><?= $value->jenis_acara ?></td>
-                                <td><?= date('d/m/Y', strtotime($value->tanggal_acara)) ?></td>
+                                <td><?= date('d/m/Y', strtotime($value->tanggal_mulai)) ?></td>
+                                <td><?= date('d/m/Y', strtotime($value->tanggal_selesai)) ?></td>
                                 <td><?= $value->deskripsi_acara ?></td>
                                 <td><?= $value->status ?></td>
                                 <td class="text-center" style="width:15%">
