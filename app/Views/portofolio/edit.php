@@ -21,7 +21,7 @@
                 <h4>Edit Data Portofolio</h4>
             </div>
             <div class="card-body col-md-6">
-                <form action="<?= base_url('portofolio/update/'.$portofolio['id']) ?>" method="POST" autocomplete="off" enctype="multipart/form-data">
+                <form action="<?= base_url('portofolio/update/' . $portofolio['id']) ?>" method="POST" autocomplete="off" enctype="multipart/form-data">
                     <?= csrf_field() ?>
                     <div class="form-group">
                         <label>Title</label>
@@ -32,7 +32,9 @@
                         <input type="file" name="foto" class="form-control">
                     </div>
                     <div class="form-group">
-                        <img src="<?= base_url('uploads/'.$portofolio['foto'])?>" class="w-100" alt="Foto Event">  
+                        <label>Current Image: </label>
+                        <?= $portofolio['foto'] ?><br><br>
+                        <img src="<?= base_url('uploads/' . $portofolio['foto']) ?>" class="w-100" alt="Foto Event">
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Save</button>
