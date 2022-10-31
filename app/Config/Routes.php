@@ -47,8 +47,12 @@ $routes->get('auth/register', 'Auth::register');
 $routes->get('auth/login', 'Auth::login');
 $routes->post('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('auth/loginProcess', 'Auth::loginProcess');
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
+
+$routes->get('/', 'LandingPage::index');
+$routes->get('auth', 'Auth::login');
+
 $routes->get('auth/logout', 'Auth::logout');
 $routes->get('portofolio', 'Portofolio::index');
 $routes->get('portofolio/add', 'Portofolio::create');
