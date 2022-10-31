@@ -12,8 +12,8 @@
     } ?>
 
     <div class="section-body">
-    <div>
-            <a href="<?= site_url('portofolio/add') ?>" ><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>  Tambah Data</button></a>
+        <div>
+            <a href="<?= site_url('portofolio/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
         </div>
         <br>
         <div class="container">
@@ -26,8 +26,11 @@
                             <div class="card-body">
                                 <?= $item['title'] ?>
                                 <a href="<?= base_url('portofolio/edit/' . $item['id']) ?>" class="btn btn-warning btn-sm ml-3"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('portofolio/delete/' . $item['id']) ?>" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
-
+                                <form action="<?= site_url('portofolio/' . $item['id']) ?>" method="post" class="d-inline" id="del-<?= $item['id'] ?>">
+                                    <?= csrf_field() ?>
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button class="btn btn-danger btn-sm" data-confirm="Hapus Data|Yakin Untuk Menghapus Data?" data-confirm-yes="submitDel(<?= $item['id'] ?>)"><i class="fas fa-trash"></i></button>
+                                </form>
                             </div>
                         </div>
                     </div>

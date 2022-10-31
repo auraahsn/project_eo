@@ -43,10 +43,17 @@ $routes->get('create-db', function () {
 });
 
 $routes->get('login', 'Auth::login');
+$routes->get('auth/register', 'Auth::register');
+$routes->get('auth/login', 'Auth::login');
 $routes->post('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('auth/loginProcess', 'Auth::loginProcess');
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
+
+$routes->get('/', 'LandingPage::index');
+$routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
+$routes->get('auth', 'Auth::login');
+
 $routes->get('auth/logout', 'Auth::logout');
 $routes->get('portofolio', 'Portofolio::index');
 $routes->get('portofolio/add', 'Portofolio::create');
@@ -54,6 +61,7 @@ $routes->post('portofolio', 'Portofolio::store');
 $routes->get('portofolio/edit/(:num)', 'Portofolio::edit/$1');
 $routes->post('portofolio/update/(:num)', 'Portofolio::update/$1');
 $routes->get('portofolio/delete/(:num)', 'Portofolio::delete/$1');
+$routes->delete('portofolio/(:segment)', 'Portofolio::destroy/$1');
 
 $routes->get('about', 'About::index');
 

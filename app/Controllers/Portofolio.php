@@ -79,4 +79,15 @@ class Portofolio extends BaseController
         $portofolio->delete($id);
         return redirect()->back()->with('status', 'Portofolio berhasil dihapus!');
     }
+    public function destroy($id)
+    {
+        $portofolio = new PortofolioModel();
+        $data = $portofolio->find($id);
+        $imageFile = $data['foto'];
+        if (file_exists("uploads/.$imageFile")) {
+            unlink("uploads/.$imageFile");
+        }
+        $portofolio->delete($id);
+        return redirect()->back()->with('status', 'Portofolio berhasil dihapus!');
+    }
 }
