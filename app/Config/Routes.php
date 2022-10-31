@@ -51,6 +51,7 @@ $routes->get('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('home', 'Home::index');
 
 $routes->get('/', 'LandingPage::index');
+$routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
 $routes->get('auth', 'Auth::login');
 
 $routes->get('auth/logout', 'Auth::logout');

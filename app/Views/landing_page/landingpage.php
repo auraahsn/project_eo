@@ -38,7 +38,7 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('about') ?>" class="nav-link">About Us</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/about_lp') ?>" class="nav-link">About Us</a></li>
                         <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li>
                         <div class="badges">
                             <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a>
@@ -81,7 +81,7 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="<?= base_url() ?>/template/assets/img/img_lp/image1.jpeg" alt="Third slide">
+                                            <img class="d-block w-100" src="<?= base_url() ?>/template/assets/img/img_lp/image3.jpg" alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Ulang Tahun</h5>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
