@@ -43,6 +43,8 @@ $routes->get('create-db', function () {
 });
 
 $routes->get('login', 'Auth::login');
+$routes->get('auth/register', 'Auth::register');
+$routes->get('auth/login', 'Auth::login');
 $routes->post('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('/', 'Home::index');
