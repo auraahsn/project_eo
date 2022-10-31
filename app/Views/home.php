@@ -20,10 +20,10 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
-                            <h4>Pemesanan</h4>
+                            <h4>Pending</h4>
                         </div>
                         <div class="card-body">
-                            5
+                            <?= hitungData('pemesanan') ?>
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,10 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
-                            <h4>Selesai</h4>
+                            <h4>On Progress</h4>
                         </div>
                         <div class="card-body">
-                            1
+                            <?= hitungData('events') ?>
                         </div>
                     </div>
                 </div>
@@ -50,10 +50,10 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
-                            <h4>In Progress</h4>
+                            <h4>Selesai</h4>
                         </div>
                         <div class="card-body">
-                            4
+                            <?= hitungData('portofolio') ?>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             <h4>Admin</h4>
                         </div>
                         <div class="card-body">
-                            5
+                            <?= hitungData('users') ?>
                         </div>
                     </div>
                     <!-- END DASHBOARD-1 -->
