@@ -35,9 +35,12 @@
             <div class="card-header">
                 <h4>Data Pemesanan</h4>
             </div>
+            <div class="ml-4">
+                    <a href="<?= site_url('pemesanan/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
+                </div>
             <div class="card-body table-responsive">
-                <table class="table table-striped table-md">
-                    <tbody>
+                <table class="table table-striped table-md" id="table1">
+                    <thead>
                         <tr>
                             <th>#</th>
                             <th>Nama Pemesan</th>
@@ -47,7 +50,10 @@
                             <th>Tanggal Selesai</th>
                             <th>Deskripsi Acara</th>
                             <th>Status</th>
+                            <th>Aksi</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <?php foreach ($pemesanan as $key => $value) : ?>
                             <tr>
                                 <td><?= $key + 1 ?></td>
@@ -60,10 +66,10 @@
                                 <td><?= $value->status ?></td>
                                 <td class="text-center" style="width:15%">
                                     <a href="<?= site_url('pemesanan/edit/' . $value->id_pemesanan) ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
-                                    <form action="<?= site_url('pemesanan/' . $value->id_pemesanan) ?>" method="post" class="d-inline">
+                                    <form action="<?= site_url('pemesanan/' . $value->id_pemesanan) ?>" method="post" class="d-inline" id="del-<?=$value->id_pemesanan?>">
                                         <?= csrf_field() ?>
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-danger btn-sm" data-confirm="Hapus Data|Yakin Untuk Menghapus Data?" data-confirm-yes="submitDel(<?=$value->id_pemesanan?>)"><i class="fas fa-trash"></i></button>
                                     </form>
                                 </td>
                             </tr>
@@ -71,9 +77,7 @@
 
                     </tbody>
                 </table>
-                <div>
-                    <a href="<?= site_url('pemesanan/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
-                </div>
+                
             </div>
         </div>
     </div>

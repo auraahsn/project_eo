@@ -6,3 +6,10 @@
  */
 
 "use strict";
+$(document).ready( function () {
+    $('#table1').DataTable();
+} );
+
+function submitDel(id){
+    $('#del-'+id).submit()
+}
