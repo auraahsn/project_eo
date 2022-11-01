@@ -3,7 +3,7 @@
 <li><a class="nav-link" href="<?= site_url('pemesanan') ?>"><i class="far fa-calendar"></i> <span>Pemesanan</span></a></li>
 <li><a class="nav-link" href="<?= site_url('events') ?>"><i class="fas fa-clipboard"></i> <span>Jadwal</span></a></li>
 <li><a class="nav-link" href="<?= site_url('portofolio') ?>"><i class="fas fa-folder"></i> <span>Portofolio</span></a></li>
-<li><a class="nav-link" href="<?= site_url('about') ?>"><i class="fas fa-heart"></i> <span>About</span></a></li>
+<!-- <li><a class="nav-link" href="<?= site_url('about') ?>"><i class="fas fa-heart"></i> <span>About</span></a></li> -->
 <!-- <li class="nav-item dropdown">
     <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
     <ul class="dropdown-menu">

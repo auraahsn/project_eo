@@ -36,8 +36,8 @@
                 <h4>Data Jadwal</h4>
             </div>
             <div class="ml-4">
-        <a href="<?= site_url('events/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
-    </div>
+                <a href="<?= site_url('events/add') ?>"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</button></a>
+            </div>
             <div class="card-body table-responsive">
                 <table class="table table-striped table-md" id="table1">
                     <thead>

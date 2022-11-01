@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Layout &rsaquo; Top Navigation &mdash; Stisla</title>
-
+    <!-- <title>Layout &rsaquo; Top Navigation &mdash; Stisla</title> -->
+    <title>EOYAMA</title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -37,9 +37,9 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </a>
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a href="<?= site_url('/') ?>" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/home_lp') ?>" class="nav-link">Home</a></li>
                         <li class="nav-item active"><a href="<?= site_url('landing_page/about_lp') ?>" class="nav-link">About Us</a></li>
-                        <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li>
+                        <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
                         <div class="badges">
                             <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a>
                         </div>
@@ -180,7 +180,7 @@
 
                 <footer class="main-footer">
                     <div class="footer-left">
-                        Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+                        Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="https://nauval.in/">EOYAMA</a>
                     </div>
                     <div class="footer-right">
                         2.3.0
