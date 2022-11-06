@@ -1,5 +1,5 @@
 <li class="menu-header">Main Menu</li>
-<li><a class="nav-link" href="<?= site_url() ?>"><i class="fas fa-home"></i> <span>Home</span></a></li>
+<li><a class="nav-link" href="<?= site_url('home') ?>"><i class="fas fa-home"></i> <span>Home</span></a></li>
 <li><a class="nav-link" href="<?= site_url('pemesanan') ?>"><i class="far fa-calendar"></i> <span>Pemesanan</span></a></li>
 <li><a class="nav-link" href="<?= site_url('events') ?>"><i class="fas fa-clipboard"></i> <span>Jadwal</span></a></li>
 <li><a class="nav-link" href="<?= site_url('portofolio') ?>"><i class="fas fa-folder"></i> <span>Portofolio</span></a></li>
