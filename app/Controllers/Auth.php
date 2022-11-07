@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UsersModel;
 
 class Auth extends BaseController
 {
@@ -40,7 +41,44 @@ class Auth extends BaseController
         return redirect()->to(site_url('login'));
     }
     public function register()
-    {
-        return view('auth/register');
+    { session();
+		$data = [
+			'validate' => \Config\Services::validation(),
+		];
+        return view('auth/register', $data);
     }
+
+    public function registerProcess(){
+        $val = $this->validate(
+            [
+                'nama_user' => 'required',
+                'username' => [
+                      'rules' => 'required|is_unique[users.username]',
+                      'errors' =>[
+                          'is_unique' =>'{field} Sudah dipakai'
+                                  ]
+                              ],
+                'password_user' => 'required',
+                'level' => 'required',
+            ],
+          );
+  
+        if(!$val){
+            $pesanvalidasi = \Config\Services::validation();
+            return redirect()->to('auth/register')->withInput()->with('validate',$pesanvalidasi);
+        }
+        $data = array(
+            'nama_user' => $this->request->getPost('nama_user'),
+            'username' => $this->request->getPost('username'),
+            'password_user' => password_hash($this->request->getPost('password_user'), PASSWORD_DEFAULT),
+            'level' => $this->request->getPost('level'),
+        );
+        $model = new UsersModel;
+        $model->insert($data);
+        //session()->setFlashdata('pesan','Selamat Anda berhasil Registrasi, silakan login!');
+        return redirect()->to(site_url('auth/login'));
+       
+    
+    }
+
 }

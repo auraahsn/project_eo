@@ -54,6 +54,7 @@ $routes->get('/', 'LandingPage::index');
 $routes->get('landing_page/home_lp', 'LandingPage::index');
 $routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
 $routes->get('auth', 'Auth::login');
+$routes->post('registerProcess', 'Auth::registerProcess');
 
 $routes->get('auth/logout', 'Auth::logout');
 $routes->get('portofolio', 'Portofolio::index');

@@ -20,16 +20,19 @@ class UserSeeder extends Seeder
                 'nama_user' => 'Admin',
                 'username' => 'admin1',
                 'password_user' => password_hash('12345', PASSWORD_BCRYPT),
+                'level' =>'admin',
             ],
             [
                 'nama_user' => 'Admin 2',
                 'username' => 'admin2',
                 'password_user' => password_hash('12345', PASSWORD_BCRYPT),
+                'level' =>'admin',
             ],
             [
                 'nama_user' => 'Ages Mahesa',
                 'username' => 'agesmahesa',
                 'password_user' => password_hash('ages', PASSWORD_BCRYPT),
+                'level' =>'admin',
             ]
         ];
         $this->db->table('users')->insertBatch($data);
