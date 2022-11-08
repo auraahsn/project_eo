@@ -27,9 +27,13 @@ class Createuser extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'level' => [
+            // 'level' => [
+            //     'type'       => 'INT',
+            //     'constraint' => '2',
+            // ],
+            'no_telp' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '20',
+                'constraint' => '100',
             ],
         ]);
         $this->forge->addKey('id_user', true);

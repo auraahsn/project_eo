@@ -55,6 +55,12 @@
 
                                         </div>
 
+                                        <div class="form-group col-9">
+                                            <label for="username">No Telpon</label>
+                                            <input id="username" type="text" class="form-control" name="no_telp">
+
+                                        </div>
+
                                     </div>
 
                                     <div class="row">
@@ -67,15 +73,22 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-9">
+                                        <div class="form-group col-6">
+                      <label for="password2" class="d-block">Password Confirmation</label>
+                      <input id="password2" type="password" class="form-control" name="password-confirm">
+                    </div>
+
+
+
+                                        <!-- <div class="form-group col-9">
                                             <label for="level">Level</label>
                                             <select name="level" id="">
                                                 <option value=""> </option>
-                                                <option value="user"> User</option>
-                                                <option value="admin"> Admin</option>
+                                                <option value="2"> User</option>
+                                                <option value="1"> Admin</option>
                                             </select>
 
-                                        </div>
+                                        </div> -->
                                     </div>
 
 

@@ -27,8 +27,8 @@ class Auth extends BaseController
             if(password_verify($post['password'], $user->password_user)){
                 $params=['id_user'=>$user->id_user];
                 session()->set($params);
-                return redirect()->to(site_url('home'));
-            }else{
+                   return redirect()->to(site_url('home'));
+                }else{
                 return redirect()->back()->with('error', 'Password salah');
             }
         } else {
@@ -55,11 +55,11 @@ class Auth extends BaseController
                 'username' => [
                       'rules' => 'required|is_unique[users.username]',
                       'errors' =>[
-                          'is_unique' =>'{field} Sudah dipakai'
+                          'is_unique' =>'{field} sudah dipakai'
                                   ]
                               ],
                 'password_user' => 'required',
-                'level' => 'required',
+                'no_telp' => 'required',
             ],
           );
   
@@ -71,7 +71,7 @@ class Auth extends BaseController
             'nama_user' => $this->request->getPost('nama_user'),
             'username' => $this->request->getPost('username'),
             'password_user' => password_hash($this->request->getPost('password_user'), PASSWORD_DEFAULT),
-            'level' => $this->request->getPost('level'),
+            'no_telp' => $this->request->getPost('no_telp'),
         );
         $model = new UsersModel;
         $model->insert($data);
