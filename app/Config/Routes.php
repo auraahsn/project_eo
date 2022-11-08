@@ -89,7 +89,8 @@ $routes->get('customer/dashboard', 'HomeCustomer::index');
 $routes->get('customer/portofolio_customer', 'PortofolioCustomer::index');
 
 
-
+$routes->get('customer/pemesanancustomer', 'PemesananCustomer::index');
+$routes->get('customer/jadwalcustomer', 'JadwalCustomer::index');
 
 
 /*
