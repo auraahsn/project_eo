@@ -28,7 +28,7 @@
         <div class="main-wrapper container">
             <div class="navbar-bg"></div>
             <nav class="navbar navbar-expand-lg main-navbar">
-                <a href="index.html" class="navbar-brand sidebar-gone-hide">EO YAMA</a>
+                <a href="<?= site_url('landing_page/home_lp') ?>" class="navbar-brand sidebar-gone-hide" style="margin-left: 60px; margin-top: 40px;">EO YAMA</a>
                 <div class="navbar-nav">
                     <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
                 </div>
@@ -36,9 +36,10 @@
                     <a class="sidebar-gone-show nav-collapse-toggle nav-link" href="#">
                         <i class="fas fa-ellipsis-v"></i>
                     </a>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" style="margin-right: 60px; margin-top: 40px;">
                         <li class="nav-item active"><a href="<?= site_url('landing_page/home_lp') ?>" class="nav-link">Home</a></li>
                         <li class="nav-item active"><a href="<?= site_url('landing_page/about_lp') ?>" class="nav-link">About Us</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/faqs_lp') ?>" class="nav-link">FAQ</a></li>
                         <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
                         <div class="badges">
                             <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a>

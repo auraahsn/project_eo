@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <!-- <title>Layout &rsaquo; Top Navigation &mdash; Stisla</title> -->
-    <title>EOYAMA</title>
+    <title>EO YAMA</title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -27,8 +27,8 @@
     <div id="app">
         <div class="main-wrapper container">
             <div class="navbar-bg"></div>
-            <nav class="navbar navbar-expand-lg main-navbar">
-                <a href="index.html" class="navbar-brand sidebar-gone-hide">EO YAMA</a>
+            <nav class="navbar navbar-expand-lg main-navbar ">
+                <a href="<?= site_url('landing_page/home_lp') ?>" class="navbar-brand sidebar-gone-hide" style="margin-left: 60px; margin-top: 40px;">EO YAMA</a>
                 <div class="navbar-nav">
                     <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
                 </div>
@@ -36,9 +36,10 @@
                     <a class="sidebar-gone-show nav-collapse-toggle nav-link" href="#">
                         <i class="fas fa-ellipsis-v"></i>
                     </a>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" style="margin-right: 60px; margin-top: 40px;">
                         <li class="nav-item active"><a href="<?= site_url('landing_page/home_lp') ?>" class="nav-link">Home</a></li>
                         <li class="nav-item active"><a href="<?= site_url('landing_page/about_lp') ?>" class="nav-link">About Us</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/faqs_lp') ?>" class="nav-link">FAQ</a></li>
                         <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
                         <div class="badges">
                             <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a>
@@ -52,6 +53,7 @@
                 <section class="section">
 
                     <div class="section-body">
+                        <!-- carousel -->
                         <div class="card">
                             <div class="card-header">
                                 <h4>Event</h4>
@@ -101,82 +103,101 @@
                             </div>
                         </div>
 
-                        <!-- Testimoni -->
+                        <!-- Media Object -->
                         <div class="row">
-                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                <article class="article article-style-c">
-                                    <!-- <div class="article-header">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card" style="width: 1110px;">
+                                    <div class="card-header">
+                                        <h4>EO YAMA</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <img class="mr-3 rounded" src="<?= base_url() ?>/template/assets/img/img_lp/img1.png" style="height: 250px; width:auto" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">EO YAMA Proffesional</h5>
+                                                <p class="mb-0">EO YAMA melayani jasa event organizer (EO) yang telah berpengalaman dalam menyelenggarakan berbagai event indoor ataupun outdoor, seperti bazaar produk perusahaan, wisuda kuliah, konser musik, hingga event outbound dengan konsep yang unik dan menarik</p><br>
+                                                <p class="mb-0">Tim EO YAMA akan merancang acara sesuai dengan kebutuhan Anda dan membuka diskusi untuk bertukar ide rancangan acara yang akan diselenggarakan nanti. Beberapa perusahaan telah mempercayakan EO kami untuk menyelenggarakan event bazaar serta kegiatan outbound dan kami juga sebagai EO profesional selalu menentukan venue yang tepat untuk acara Anda. Kami tidak hanya berkontribusi untuk acara perkantoran saja, tapi kami juga memberikan acara yang meriah untuk anak-anak sekolah/kuliah, nikah online atau offline, reuni keluarga, pagelaran, hingga beberapa jenis acara yang meriah dan mengesankan</p><br>
+                                                <p class="mb-0">Diskusikan konsep event yang Anda inginkan kepada tim EO kami di Jakarta sehingga dapat menentukan konsep yang berbeda dari lainnya dan tidak akan terlupakan!</p><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                <!-- Testimoni -->
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                        <article class="article article-style-c">
+                                            <!-- <div class="article-header">
                                         <div class="article-image" data-background="<?= base_url() ?>/template/assets/img/img_lp/image1.jpeg">
                                         </div>
                                     </div> -->
-                                    <div class="article-details">
-                                        <div class="article-category"><a href="#">News</a>
-                                            <div class="bullet"></div> <a href="#">5 Days</a>
-                                        </div>
-                                        <div class="article-title">
-                                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                                        </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. </p>
-                                        <div class="article-user">
-                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                            <div class="article-user-details">
-                                                <div class="user-detail-name">
-                                                    <a href="#">Hasan Basri</a>
+                                            <div class="article-details">
+                                                <div class="article-category"><a href="#">Testimoni</a>
+                                                    <div class="bullet"></div> <a href="#">3 Days</a>
                                                 </div>
-                                                <div class="text-job">Web Developer</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                <article class="article article-style-c">
-                                    <div class="article-details">
-                                        <div class="article-category"><a href="#">News</a>
-                                            <div class="bullet"></div> <a href="#">5 Days</a>
-                                        </div>
-                                        <div class="article-title">
-                                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                                        </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. </p>
-                                        <div class="article-user">
-                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                            <div class="article-user-details">
-                                                <div class="user-detail-name">
-                                                    <a href="#">Hasan Basri</a>
+                                                <div class="article-title">
+                                                    <h2><a href="#">Event Seminar Nasional</a></h2>
                                                 </div>
-                                                <div class="text-job">Web Developer</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                <article class="article article-style-c">
-                                    <div class="article-details">
-                                        <div class="article-category"><a href="#">News</a>
-                                            <div class="bullet"></div> <a href="#">5 Days</a>
-                                        </div>
-                                        <div class="article-title">
-                                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                                        </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. </p>
-                                        <div class="article-user">
-                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                            <div class="article-user-details">
-                                                <div class="user-detail-name">
-                                                    <a href="#">Hasan Basri</a>
+                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                                <div class="article-user">
+                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                                    <div class="article-user-details">
+                                                        <div class="user-detail-name">
+                                                            <a href="#">Hasan Basri</a>
+                                                        </div>
+                                                        <div class="text-job">Web Developer</div>
+                                                    </div>
                                                 </div>
-                                                <div class="text-job">Web Developer</div>
                                             </div>
-                                        </div>
+                                        </article>
                                     </div>
-                                </article>
-                            </div>
-                        </div>
+                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                        <article class="article article-style-c">
+                                            <div class="article-details">
+                                                <div class="article-category"><a href="#">Testimoni</a>
+                                                    <div class="bullet"></div> <a href="#">1 Days</a>
+                                                </div>
+                                                <div class="article-title">
+                                                    <h2><a href="#">Event Ulang Tahun</a></h2>
+                                                </div>
+                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                                <div class="article-user">
+                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                                    <div class="article-user-details">
+                                                        <div class="user-detail-name">
+                                                            <a href="#">Basril Ha</a>
+                                                        </div>
+                                                        <div class="text-job">Web Developer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                        <article class="article article-style-c">
+                                            <div class="article-details">
+                                                <div class="article-category"><a href="#">Testimoni</a>
+                                                    <div class="bullet"></div> <a href="#">7 Days</a>
+                                                </div>
+                                                <div class="article-title">
+                                                    <h2><a href="#">Event Anniversary Perusahaan</a></h2>
+                                                </div>
+                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                                <div class="article-user">
+                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                                    <div class="article-user-details">
+                                                        <div class="user-detail-name">
+                                                            <a href="#">Putri C</a>
+                                                        </div>
+                                                        <div class="text-job">Web Developer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
                 </section>
             </div>
 

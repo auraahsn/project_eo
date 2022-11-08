@@ -53,6 +53,8 @@ $routes->get('home', 'Home::index');
 $routes->get('/', 'LandingPage::index');
 $routes->get('landing_page/home_lp', 'LandingPage::index');
 $routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
+$routes->get('landing_page/faqs_lp', 'LandingPage::faqsLP');
+
 $routes->get('auth', 'Auth::login');
 $routes->post('registerProcess', 'Auth::registerProcess');
 

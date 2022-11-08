@@ -15,4 +15,7 @@ class LandingPage extends BaseController
     {
         echo password_hash('12345', PASSWORD_BCRYPT);
     }
+    public function faqsLP(){
+        echo view('landing_page/faqs_lp');
+    }
 }
