@@ -50,7 +50,7 @@ $routes->get('auth/loginProcess', 'Auth::loginProcess');
 // $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
 
-$routes->get('/', 'LandingPage::index');
+//$routes->get('/', 'LandingPage::index');
 $routes->get('landing_page/home_lp', 'LandingPage::index');
 $routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
 $routes->get('landing_page/faqs_lp', 'LandingPage::faqsLP');
@@ -83,6 +83,11 @@ $routes->get('events/edit/(:num)', 'JadwalController::edit/$1');
 $routes->put('events/(:any)', 'JadwalController::update/$1');
 $routes->delete('events/(:segment)', 'JadwalController::destroy/$1');
 // $routes->get('calendar', 'FullCalendar::index');
+
+$routes->get('/', 'Home::index');
+$routes->get('customer/dashboard', 'HomeCustomer::index');
+$routes->get('customer/portofolio_customer', 'PortofolioCustomer::index');
+
 
 
 
