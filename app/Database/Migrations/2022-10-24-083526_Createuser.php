@@ -35,6 +35,10 @@ class Createuser extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
+            'role_id' => [
+                'type'       => 'INT',
+                'constraint' => '2',
+            ],
         ]);
         $this->forge->addKey('id_user', true);
         $this->forge->createTable('users');

@@ -72,6 +72,7 @@ class Auth extends BaseController
             'username' => $this->request->getPost('username'),
             'password_user' => password_hash($this->request->getPost('password_user'), PASSWORD_DEFAULT),
             'no_telp' => $this->request->getPost('no_telp'),
+            'role_id'=>'2',
         );
         $model = new UsersModel;
         $model->insert($data);
