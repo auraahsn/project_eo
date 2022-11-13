@@ -2,10 +2,15 @@
 
 namespace App\Controllers;
 
+use App\Models\PortofolioModel;
+
 class PortofolioCustomer extends BaseController
 {
     public function index()
     {
-        return view('customer/portofolio_customer');
+        $portofolio = new PortofolioModel();
+        
+        $data['portofolio'] = $portofolio->findAll();
+        return view('customer/portofolio_customer', $data);
     }
 }

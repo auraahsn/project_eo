@@ -40,10 +40,10 @@
                         <li class="nav-item active"><a href="<?= site_url('customer/dashboard') ?>" class="nav-link">Home</a></li>
                         <li class="nav-item active"><a href="<?= site_url('customer/pemesanancustomer') ?>" class="nav-link">Pemesanan</a></li>
                         <li class="nav-item active"><a href="<?= site_url('customer/jadwalcustomer') ?>" class="nav-link">Jadwal</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('customer/portofolio_customer') ?>" class="nav-link">Portofolio</a></li> 
+                        <li class="nav-item active"><a href="<?= site_url('customer/portofolio_customer') ?>" class="nav-link">Portofolio</a></li>
                         <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
                         <div class="badges">
-                            <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a>
+                            <!-- <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a> -->
                         </div>
                     </ul>
                 </div>
@@ -51,11 +51,7 @@
 
             <!-- Main Content -->
             <div class="main-content">
-                <section class="section">
-
-                    <div class="section-body">
-                        
-                    </section>
+                <?= $this->renderSection('content') ?>
             </div>
 
             <footer class="main-footer">
