@@ -10,7 +10,7 @@ class PemesananCustomer extends BaseController
         $builder = $this->db->table('pemesanan');
         $query   = $builder->get()->getResult();
         $data['pemesanan'] = $query;
-        return view('pemesanan/list', $data);
+        return view('customer/pemesanancustomer', $data);
         //print_r($query->getResult());
     }
     // public function create()

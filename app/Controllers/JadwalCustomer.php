@@ -10,7 +10,7 @@ class JadwalCustomer extends BaseController
         $builder = $this->db->table('events');
         $query   = $builder->get()->getResult();
         $data['events'] = $query;
-        return view('events/list', $data);
+        return view('customer/jadwalcustomer', $data);
         //print_r($query->getResult());
     }
     public function create()
