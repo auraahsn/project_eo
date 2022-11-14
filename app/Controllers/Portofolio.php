@@ -10,9 +10,6 @@ class Portofolio extends BaseController
     {
         $portofolio = new PortofolioModel();
 
-        // $builder = $this->db->table('portofolio');
-        // $query = $builder->get()->getResult();
-        // $data['portofolio'] = $query;
         $data['portofolio'] = $portofolio->findAll();
         return view('portofolio/get', $data);
     }

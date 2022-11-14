@@ -19,9 +19,10 @@
                 <?php foreach ($portofolio as $item) : ?>
                     <div class="col-sm-4">
                         <div class="card card-primary" style="width: 17rem;">
-                            <img class="rounded mx-auto d-block mt-2" src="<?= "public/uploads/" . $item['foto']; ?>" height="200px" width="250px" alt="foto">
+                            <img class="rounded mx-auto d-block mt-2" src="<?php echo base_url('/uploads/'.$item['foto'])?>" height="200px" width="250px" alt="foto">
                             <div class="card-body">
-                                <?= $item['title'] ?>
+                              
+                                <b><p><a href="#"><?php echo $item['title'] ?></a></p></b>
                             </div>
                         </div>
                     </div>
