@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                 <?php endif; ?>
-                            <form method="POST" action="<?= site_url('auth/loginProcess') ?>" class="needs-validation" novalidate="">
+                            <form method="POST" action="<?= site_url('auth/loginProcessPelanggan') ?>" class="needs-validation" novalidate="">
                                     <?= csrf_field() ?>
                                     <div class="form-group">
                                         <label for="username">Username</label>

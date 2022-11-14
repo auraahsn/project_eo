@@ -37,22 +37,59 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </a>
                     <ul class="navbar-nav" style="margin-right: 60px; margin-top: 40px;">
-                        <li class="nav-item active"><a href="<?= site_url('customer/dashboard') ?>" class="nav-link">Home</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('pemesanancustomer') ?>" class="nav-link">Pemesanan</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('customer/jadwalcustomer') ?>" class="nav-link">Jadwal</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('customer/portofolio_customer') ?>" class="nav-link">Portofolio</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('auth/logout') ?>" class="nav-link">Logout</a></li>
+                    <li class="nav-item active"><a href="<?= site_url('landing_page/home_lp') ?>" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/about_lp') ?>" class="nav-link">About Us</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('landing_page/faqs_lp') ?>" class="nav-link">FAQ</a></li>
                         <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
-                        <div class="badges">
+                        <!-- <div class="badges"> -->
                             <!-- <a href="<?= site_url('auth') ?>" class="badge badge-light">LOGIN</a> -->
-                        </div>
+                        <!-- </div> -->
                     </ul>
                 </div>
             </nav>
 
             <!-- Main Content -->
             <div class="main-content">
-                <?= $this->renderSection('content') ?>
+               
+<section class="section " >
+  
+
+    <?php if (session()->getFlashdata('status')) {
+        echo "<h5>" . session()->getFlashdata('status') . "</h5>";
+    } ?>
+
+    <div class="section-body " >
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row h-100 justify-content-center align-items-center">
+               
+                    <div class="col-sm-4 align-self-center">
+                        <div class="card card-primary" style="width: 17rem;">
+                            <img class="rounded mx-auto d-block mt-2" src="<?= base_url() ?>/template/assets/user.png" height="200px" width="200px" alt="foto">
+                            <div class="card-body mx-auto">
+                            <a href="<?= base_url('auth/loginPelanggan') ?>" class="btn btn-primary btn-sm ml-3">Login Pelanggan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 align-self-center">
+                        <div class="card card-primary" style="width: 17rem;">
+                            <img class="rounded mx-auto d-block mt-2" src="<?= base_url() ?>/template/assets/customize.png" height="200px" width="200px" alt="foto">
+                            <div class="card-body mx-auto">
+                            <a href="<?= base_url('auth/loginAdmin') ?>" class="btn btn-primary btn-sm ml-3">Login Admin</a>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>
+</section>
+<div class="mt-5 text-muted text-center">
+                            Belum Punya Akun? <a href= "<?= site_url('auth/register')?>" > Buat Akun </a>
+                        </div>
             </div>
 
             <footer class="main-footer">

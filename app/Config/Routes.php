@@ -42,11 +42,14 @@ $routes->get('create-db', function () {
     }
 });
 
-$routes->get('login', 'Auth::login');
+$routes->get('login', 'Auth::pilihLogin');
 $routes->get('auth/register', 'Auth::register');
-$routes->get('auth/login', 'Auth::login');
+$routes->get('auth/loginAdmin', 'Auth::login');
+$routes->get('auth/loginPelanggan', 'Auth::loginP');
 $routes->post('auth/loginProcess', 'Auth::loginProcess');
 $routes->get('auth/loginProcess', 'Auth::loginProcess');
+$routes->post('auth/loginProcessPelanggan', 'Auth::loginProcessPelanggan');
+$routes->get('auth/loginProcessPelanggan', 'Auth::loginProcessPelanggan');
 // $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
 
@@ -55,7 +58,8 @@ $routes->get('landing_page/home_lp', 'LandingPage::index');
 $routes->get('landing_page/about_lp', 'LandingPage::aboutLP');
 $routes->get('landing_page/faqs_lp', 'LandingPage::faqsLP');
 
-$routes->get('auth', 'Auth::login');
+$routes->get('auth', 'Auth::pilihLogin');
+$routes->get('pilihLogin', 'Auth::pilihLogin');
 $routes->post('registerProcess', 'Auth::registerProcess');
 
 $routes->get('auth/logout', 'Auth::logout');
