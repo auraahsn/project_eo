@@ -89,8 +89,15 @@ $routes->get('customer/dashboard', 'HomeCustomer::index');
 $routes->get('customer/portofolio_customer', 'PortofolioCustomer::index');
 
 
-$routes->get('customer/pemesanancustomer', 'PemesananCustomer::index');
+$routes->get('pemesanancustomer', 'PemesananCustomer::index');
 $routes->get('customer/jadwalcustomer', 'JadwalCustomer::index');
+
+
+$routes->get('pemesanancustomer/add', 'PemesananCustomer::create');
+$routes->post('pemesanancustomer', 'PemesananCustomer::store');
+$routes->get('pemesanancustomer/edit/(:num)', 'PemesananCustomer::edit/$1');
+$routes->put('pemesanancustomer/(:any)', 'PemesananCustomer::update/$1');
+$routes->delete('pemesanancustomer/(:segment)', 'PemesananCustomer::destroy/$1');
 
 
 /*
