@@ -38,7 +38,7 @@
                     </a>
                     <ul class="navbar-nav" style="margin-right: 60px; margin-top: 40px;">
                         <li class="nav-item active"><a href="<?= site_url('customer/dashboard') ?>" class="nav-link">Home</a></li>
-                        <li class="nav-item active"><a href="<?= site_url('customer/pemesanancustomer') ?>" class="nav-link">Pemesanan</a></li>
+                        <li class="nav-item active"><a href="<?= site_url('pemesanancustomer') ?>" class="nav-link">Pemesanan</a></li>
                         <li class="nav-item active"><a href="<?= site_url('customer/jadwalcustomer') ?>" class="nav-link">Jadwal</a></li>
                         <li class="nav-item active"><a href="<?= site_url('customer/portofolio_customer') ?>" class="nav-link">Portofolio</a></li>
                         <!-- <li class="nav-item active"><a href="#" class="nav-link">Portofolio</a></li> -->
