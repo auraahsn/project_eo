@@ -125,79 +125,79 @@
                             </div>
                         </div>
 
-                                <!-- Testimoni -->
-                                <div class="row">
-                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                        <article class="article article-style-c">
-                                            <!-- <div class="article-header">
+                        <!-- Testimoni -->
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                <article class="article article-style-c">
+                                    <!-- <div class="article-header">
                                         <div class="article-image" data-background="<?= base_url() ?>/template/assets/img/img_lp/image1.jpeg">
                                         </div>
                                     </div> -->
-                                            <div class="article-details">
-                                                <div class="article-category"><a href="#">Testimoni</a>
-                                                    <div class="bullet"></div> <a href="#">3 Days</a>
+                                    <div class="article-details">
+                                        <div class="article-category"><a href="#">Testimoni</a>
+                                            <div class="bullet"></div> <a href="#">3 Days</a>
+                                        </div>
+                                        <div class="article-title">
+                                            <h2><a href="#">Event Seminar Nasional</a></h2>
+                                        </div>
+                                        <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                        <div class="article-user">
+                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                            <div class="article-user-details">
+                                                <div class="user-detail-name">
+                                                    <a href="#">Hasan Basri</a>
                                                 </div>
-                                                <div class="article-title">
-                                                    <h2><a href="#">Event Seminar Nasional</a></h2>
-                                                </div>
-                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
-                                                <div class="article-user">
-                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                                    <div class="article-user-details">
-                                                        <div class="user-detail-name">
-                                                            <a href="#">Hasan Basri</a>
-                                                        </div>
-                                                        <div class="text-job">Web Developer</div>
-                                                    </div>
-                                                </div>
+                                                <div class="text-job">Web Developer</div>
                                             </div>
-                                        </article>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                        <article class="article article-style-c">
-                                            <div class="article-details">
-                                                <div class="article-category"><a href="#">Testimoni</a>
-                                                    <div class="bullet"></div> <a href="#">1 Days</a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                <article class="article article-style-c">
+                                    <div class="article-details">
+                                        <div class="article-category"><a href="#">Testimoni</a>
+                                            <div class="bullet"></div> <a href="#">1 Days</a>
+                                        </div>
+                                        <div class="article-title">
+                                            <h2><a href="#">Event Ulang Tahun</a></h2>
+                                        </div>
+                                        <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                        <div class="article-user">
+                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                            <div class="article-user-details">
+                                                <div class="user-detail-name">
+                                                    <a href="#">Basril Ha</a>
                                                 </div>
-                                                <div class="article-title">
-                                                    <h2><a href="#">Event Ulang Tahun</a></h2>
-                                                </div>
-                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
-                                                <div class="article-user">
-                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                                    <div class="article-user-details">
-                                                        <div class="user-detail-name">
-                                                            <a href="#">Basril Ha</a>
-                                                        </div>
-                                                        <div class="text-job">Web Developer</div>
-                                                    </div>
-                                                </div>
+                                                <div class="text-job">Web Developer</div>
                                             </div>
-                                        </article>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-4 col-lg-4 col-sm-4">
-                                        <article class="article article-style-c">
-                                            <div class="article-details">
-                                                <div class="article-category"><a href="#">Testimoni</a>
-                                                    <div class="bullet"></div> <a href="#">7 Days</a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+                                <article class="article article-style-c">
+                                    <div class="article-details">
+                                        <div class="article-category"><a href="#">Testimoni</a>
+                                            <div class="bullet"></div> <a href="#">7 Days</a>
+                                        </div>
+                                        <div class="article-title">
+                                            <h2><a href="#">Event Anniversary Perusahaan</a></h2>
+                                        </div>
+                                        <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
+                                        <div class="article-user">
+                                            <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
+                                            <div class="article-user-details">
+                                                <div class="user-detail-name">
+                                                    <a href="#">Putri C</a>
                                                 </div>
-                                                <div class="article-title">
-                                                    <h2><a href="#">Event Anniversary Perusahaan</a></h2>
-                                                </div>
-                                                <p>Terima kasih banyak! Semoga bisa bekerja sama lagi di lain event. </p>
-                                                <div class="article-user">
-                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/img_lp/user.png">
-                                                    <div class="article-user-details">
-                                                        <div class="user-detail-name">
-                                                            <a href="#">Putri C</a>
-                                                        </div>
-                                                        <div class="text-job">Web Developer</div>
-                                                    </div>
-                                                </div>
+                                                <div class="text-job">Web Developer</div>
                                             </div>
-                                        </article>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
+                            </div>
+                        </div>
                 </section>
             </div>
 
