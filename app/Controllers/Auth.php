@@ -111,7 +111,7 @@ class Auth extends BaseController
         $model = new UsersModel;
         $model->insert($data);
         //session()->setFlashdata('pesan','Selamat Anda berhasil Registrasi, silakan login!');
-        return redirect()->to(site_url('auth/login'));
+        return redirect()->to(site_url('pilihLogin'));
        
     
     }

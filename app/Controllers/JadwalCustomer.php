@@ -19,7 +19,7 @@ class JadwalCustomer extends BaseController
             $data['data'][$key]['title'] = $value->title;
             $data['data'][$key]['start'] = $value->start_date;
             $data['data'][$key]['end'] = $value->end_date;
-            $data['data'][$key]['backgroundColor'] = "#DD5353";
+            $data['data'][$key]['backgroundColor'] = "#ffa7a7";
         }        
       return view('calendar',$data);
     }
