@@ -30,10 +30,12 @@ class Auth extends BaseController
                 $params=['id_user'=>$user->id_user];
 		$role =['role_id'=>$user->role_id];
                 session()->set($params, $role);
-		if ($user->role_id == 1){
+		if ($user->role_id == 1){ //customer
 			return redirect()->to(site_url('customer/dashboard'));
-		}else{
-			return redirect()-> to(site_url('home'));
+		}else if($user->role_id == 2){ //admin
+            return redirect()-> to(site_url('home'));
+        }else{ //superadmin
+			return redirect()-> to(site_url('homesuperadmin'));
 		}
                 
                 }else{

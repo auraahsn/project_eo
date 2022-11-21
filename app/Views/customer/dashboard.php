@@ -135,7 +135,7 @@
         </div>
         <h2 class="section-title">Event Gallery</h2>
         <div class="container">
-            <div class="row align-items-start">
+            <div class="row align-items-start"> 
                 <div class="col-sm-4 mx-5 my-5">
                     <img src="<?= base_url() ?>/template/assets/img/gallery/gallery1.jpg" alt="Gallery 1" width="400dp" height="300dp"></a>
                     <img src="<?= base_url() ?>/template/assets/img/gallery/gallery2.jpg" alt="Gallery 2" width="400dp" height="300dp"></a>

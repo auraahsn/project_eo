@@ -98,6 +98,12 @@ $routes->get('pemesanancustomer/edit/(:num)', 'PemesananCustomer::edit/$1');
 $routes->put('pemesanancustomer/(:any)', 'PemesananCustomer::update/$1');
 $routes->delete('pemesanancustomer/(:segment)', 'PemesananCustomer::destroy/$1');
 
+$routes->get('homesuperadmin', 'SuperAdminController::index');
+$routes->get('homesuperadmin/addUser', 'SuperAdminController::create');
+$routes->post('homesuperadmin', 'SuperAdminController::store');
+$routes->get('homesuperadmin/editUser/(:num)', 'SuperAdminController::edit/$1');
+$routes->put('homesuperadmin/(:any)', 'SuperAdminController::update/$1');
+$routes->delete('homesuperadmin/(:segment)', 'SuperAdminController::destroy/$1');
 
 /*
  * --------------------------------------------------------------------
