@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="mt-5 text-muted text-center">
-                Already Registered? <a href= "<?= site_url('pilihLogin')?>" > Log In </a>
+                Already Registered? <a href= "<?= site_url('login')?>" > Log In </a>
             </div>
                         <div class="simple-footer">
                             Copyright &copy; EOYAMA 2022

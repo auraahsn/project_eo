@@ -9,13 +9,13 @@ class Auth extends BaseController
     {
         return redirect()->to(site_url('login'));
     }
-    public function pilihLogin()
-    {
-        if(session('id_user')){
-            return redirect()->to(site_url('home'));
-        }
-            return view('auth/pilihLogin');
-    }
+    // public function pilihLogin()
+    // {
+    //     if(session('id_user')){
+    //         return redirect()->to(site_url('home'));
+    //     }
+    //         return view('auth/pilihLogin');
+    // }
 
     public function login()
     {
@@ -25,13 +25,13 @@ class Auth extends BaseController
         return view('auth/login');
     }
 
-    public function loginP()
-    {
-    if(session('id_user')){
-        return redirect()->to(site_url('home'));
-    }
-        return view('auth/loginP');
-    }
+    // public function loginP()
+    // {
+    // if(session('id_user')){
+    //     return redirect()->to(site_url('home'));
+    // }
+    //     return view('auth/loginP');
+    // }
 
     public function loginProcess()
     {
@@ -51,28 +51,11 @@ class Auth extends BaseController
         }
     }
 
-    public function loginProcessPelanggan()
-    {
-        $post = $this->request->getPost();
-        $query = $this->db->table('users')->getWhere(['username' => $post['username']]);
-        $user = $query->getRow();
-        if ($user) {
-            if(password_verify($post['password'], $user->password_user)){
-                $params=['id_user'=>$user->id_user];
-                session()->set($params);
-                   return redirect()->to(site_url('customer/dashboard'));
-                }else{
-                return redirect()->back()->with('error', 'Password salah');
-            }
-        } else {
-            return redirect()->back()->with('error', 'Username tidak ditemukan');
-        }
-    }
-
+   
 
     public function logout(){
         session()->remove('id_user');
-        return redirect()->to(site_url('pilihLogin'));
+        return redirect()->to(site_url('login'));
     }
     public function register()
     { session();
@@ -111,7 +94,7 @@ class Auth extends BaseController
         $model = new UsersModel;
         $model->insert($data);
         //session()->setFlashdata('pesan','Selamat Anda berhasil Registrasi, silakan login!');
-        return redirect()->to(site_url('pilihLogin'));
+        return redirect()->to(site_url('login'));
        
     
     }

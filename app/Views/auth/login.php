@@ -87,9 +87,9 @@
 
                             </div>
                         </div>
-                        <!-- <div class="mt-5 text-muted text-center">
+                        <div class="mt-5 text-muted text-center">
                             Don't have an account? <a href= "<?= site_url('auth/register')?>" > Create One </a>
-                        </div> -->
+                        </div>
                         <div class="simple-footer">
                             Copyright &copy; EO YAMA 2022
                         </div>
