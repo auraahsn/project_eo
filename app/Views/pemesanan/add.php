@@ -24,6 +24,10 @@
                 <form action="<?= site_url('pemesanan') ?>" method="post" autocomplete="off">
                     <?= csrf_field() ?>
                     <div class="form-group">
+                        <label>ID Pemesan</label>
+                        <input type="text" name="id_user" class="form-control" required autofocus>
+                    </div>
+                    <div class="form-group">
                         <label>Nama Pemesan</label>
                         <input type="text" name="nama_pemesan" class="form-control" required autofocus>
                     </div>

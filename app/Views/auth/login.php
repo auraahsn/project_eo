@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="mt-5 text-muted text-center">
-                            Don't have an account? <a href= "<?= site_url('auth/register')?>" > Create One </a>
+                            Belum punya akun? <a href= "<?= site_url('auth/register')?>" > Buat Akun </a>
                         </div>
                         <div class="simple-footer">
                             Copyright &copy; EO YAMA 2022

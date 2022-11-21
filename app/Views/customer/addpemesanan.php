@@ -24,6 +24,10 @@
                 <form action="<?= site_url('pemesanancustomer') ?>" method="post" autocomplete="off">
                     <?= csrf_field() ?>
                     <div class="form-group">
+                        <label>ID Pemesan</label>
+                        <input type="text" name="id_user"  class="form-control" required autofocus>
+                    </div>
+                    <div class="form-group">
                         <label>Nama Pemesan</label>
                         <input type="text" name="nama_pemesan" class="form-control" required autofocus>
                     </div>
@@ -48,8 +52,8 @@
                         <textarea name="deskripsi_acara" class="form-control" cols="30" rows="10"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Status</label>
-                        <input type="text" name="status" class="form-control">
+                        <!-- <label>Status</label> -->
+                        <input type="hidden" name="status" value="Pending" class="form-control">
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Save</button>

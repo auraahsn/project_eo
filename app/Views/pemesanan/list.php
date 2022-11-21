@@ -43,6 +43,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
+                            <th>ID Pemesan</th>
                             <th>Nama Pemesan</th>
                             <th>No Telepon</th>
                             <th>Jenis Acara</th>
@@ -57,6 +58,7 @@
                         <?php foreach ($pemesanan as $key => $value) : ?>
                             <tr>
                                 <td><?= $key + 1 ?></td>
+                                <td><?= $value->id_user ?></td>
                                 <td><?= $value->nama_pemesan ?></td>
                                 <td><?= $value->telepon ?></td>
                                 <td><?= $value->jenis_acara ?></td>

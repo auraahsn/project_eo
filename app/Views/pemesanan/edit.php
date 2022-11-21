@@ -25,6 +25,10 @@
                     <?= csrf_field() ?>
                     <input type="hidden" name="_method" value="PUT">
                     <div class="form-group">
+                        <label>ID Pemesan</label>
+                        <input type="text" name="id_user" value="<?= $pemesanan->id_user ?>" class="form-control" required>
+                    </div>
+                    <div class="form-group">
                         <label>Nama Pemesan</label>
                         <input type="text" name="nama_pemesan" value="<?= $pemesanan->nama_pemesan ?>" class="form-control" required>
                     </div>

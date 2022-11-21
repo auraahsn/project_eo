@@ -40,25 +40,32 @@
                             </div>
 
                             <div class="card-body">
-                                <form action="<?= site_url('registerProcess') ?>" method="POST">
-                                <?= $validate->listErrors() ?>
+                                <form action="<?= site_url('registerProcess') ?>" method="POST" class="needs-validation" novalidate="">
+                              
                                     <?= csrf_field() ?>
                                     <div class="row">
                                         <div class="form-group col-9">
                                             <label for="nama_user">Nama</label>
-                                            <input id="nama_user" type="text" class="form-control" name="nama_user">
+                                            <input id="nama_user" type="text" class="form-control" name="nama_user" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi nama anda
+                                            </div>
                                         </div>
 
                                         <div class="form-group col-9">
                                             <label for="username">Username</label>
-                                            <input id="username" type="text" class="form-control" name="username">
+                                            <input id="username" type="text" class="form-control" name="username" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi username
+                                            </div>
 
                                         </div>
 
                                         <div class="form-group col-9">
-                                            <label for="username">No Telpon</label>
-                                            <input id="username" type="text" class="form-control" name="no_telp">
-
+                                            <label for="username">No Telepon</label>
+                                            <input id="username" type="text" class="form-control" name="no_telp" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi nomor telepon                                            </div>
                                         </div>
 
                                     </div>
@@ -66,10 +73,13 @@
                                     <div class="row">
                                         <div class="form-group col-6">
                                             <label for="password_user" class="d-block">Password</label>
-                                            <input id="password_user" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password_user">
+                                            <input id="password_user" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password_user" required>
                                             <div id="pwindicator" class="pwindicator">
                                                 <div class="bar"></div>
                                                 <div class="label"></div>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Silakan isi password anda
                                             </div>
                                         </div>
 
@@ -101,7 +111,7 @@
                             </div>
                         </div>
                         <div class="mt-5 text-muted text-center">
-                Already Registered? <a href= "<?= site_url('login')?>" > Log In </a>
+                Sudah Punya Akun? <a href= "<?= site_url('login')?>" > Log In </a>
             </div>
                         <div class="simple-footer">
                             Copyright &copy; EOYAMA 2022

@@ -31,9 +31,9 @@ class Auth extends BaseController
 		$role =['role_id'=>$user->role_id];
                 session()->set($params, $role);
 		if ($user->role_id == 1){
-			return redirect()->to(site_url('home'));
+			return redirect()->to(site_url('customer/dashboard'));
 		}else{
-			return redirect()-> to(site_url('customer/dashboard'));
+			return redirect()-> to(site_url('home'));
 		}
                 
                 }else{
@@ -80,7 +80,7 @@ class Auth extends BaseController
             'username' => $this->request->getPost('username'),
             'password_user' => password_hash($this->request->getPost('password_user'), PASSWORD_DEFAULT),
             'no_telp' => $this->request->getPost('no_telp'),
-            'role_id'=>'2',
+            'role_id'=>'1',
         );
         $model = new UsersModel;
         $model->insert($data);
