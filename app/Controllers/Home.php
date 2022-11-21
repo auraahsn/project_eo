@@ -6,7 +6,11 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo view('home');
+        // $session = session();
+        // if($session->role_id != 1){
+        //     return redirect()-> to(site_url('customer/dashboard'));
+        // }
+        return view('home');
     }
     public function generate()
     {

@@ -83,7 +83,7 @@ $routes->put('events/(:any)', 'JadwalController::update/$1');
 $routes->delete('events/(:segment)', 'JadwalController::destroy/$1');
 // $routes->get('calendar', 'FullCalendar::index');
 
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 $routes->get('customer/dashboard', 'HomeCustomer::index');
 $routes->get('customer/portofolio_customer', 'PortofolioCustomer::index');
 

@@ -9,13 +9,6 @@ class Auth extends BaseController
     {
         return redirect()->to(site_url('login'));
     }
-    // public function pilihLogin()
-    // {
-    //     if(session('id_user')){
-    //         return redirect()->to(site_url('home'));
-    //     }
-    //         return view('auth/pilihLogin');
-    // }
 
     public function login()
     {
@@ -25,13 +18,7 @@ class Auth extends BaseController
         return view('auth/login');
     }
 
-    // public function loginP()
-    // {
-    // if(session('id_user')){
-    //     return redirect()->to(site_url('home'));
-    // }
-    //     return view('auth/loginP');
-    // }
+    
 
     public function loginProcess()
     {
@@ -41,8 +28,14 @@ class Auth extends BaseController
         if ($user) {
             if(password_verify($post['password'], $user->password_user)){
                 $params=['id_user'=>$user->id_user];
-                session()->set($params);
-                   return redirect()->to(site_url('home'));
+		$role =['role_id'=>$user->role_id];
+                session()->set($params, $role);
+		if ($user->role_id == 1){
+			return redirect()->to(site_url('home'));
+		}else{
+			return redirect()-> to(site_url('customer/dashboard'));
+		}
+                
                 }else{
                 return redirect()->back()->with('error', 'Password salah');
             }
@@ -50,8 +43,6 @@ class Auth extends BaseController
             return redirect()->back()->with('error', 'Username tidak ditemukan');
         }
     }
-
-   
 
     public function logout(){
         session()->remove('id_user');
