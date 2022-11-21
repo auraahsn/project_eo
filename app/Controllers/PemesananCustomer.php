@@ -6,9 +6,9 @@ class PemesananCustomer extends BaseController
 {
     public function index()
     {
-
+        $session = session();
         $builder = $this->db->table('pemesanan');
-        $query   = $builder->get()->getResult();
+        $query   = $builder->where('nama_pemesan', $session->id_user)->get()->getResult();
         $data['pemesanan'] = $query;
         return view('customer/pemesanancustomer', $data);
         //print_r($query->getResult());
