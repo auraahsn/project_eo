@@ -10,11 +10,13 @@
         <h1>Home</h1>
     </div>
 
+
     <div class="jumbotron">
         <h1>Best Event For</h1>
         <h1>All Occasions</h1>
         <p><i> EO YAMA berpengalaman melaksanakan event secara offline dengan berbagai klien </i></p>
         <p><a class="btn btn-primary btn-lg" href="http://localhost:8080/customer/portofolio_customer" role="button">OUR PORTOFOLIO</a></p>
+
     </div>
 
     <div class="section-body">
@@ -132,21 +134,22 @@
 
         </div>
         <h2 class="section-title">Event Gallery</h2>
-        <div class="row gallery-wrap">
-            <div class="col-lg-8">
-                <a href="https://kubika-eo.id/assets/frontend/images/gallery/gallery10.png" class="ts-popup">
-                    <img class="img-fluid gallery-1" src="https://kubika-eo.id/assets/frontend/images/gallery/gallery10.png" alt="">
-                </a>
-            </div><!-- col end-->
-            <div class="col-lg-4 pl-0">
-                <a href="https://kubika-eo.id/assets/frontend/images/gallery/gallery11.png" class="ts-popup">
-                    <img class="img-fluid gallery-2" src="https://kubika-eo.id/assets/frontend/images/gallery/gallery11.png" alt="">
-                </a>
-                <a href="https://kubika-eo.id/assets/frontend/images/gallery/gallery6.jpg" class="ts-popup">
-                    <img class="img-fluid gallery-3" src="https://kubika-eo.id/assets/frontend/images/gallery/gallery6.jpg" alt="">
-                </a>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-sm-4 mx-5 my-5">
+                    <img src="<?= base_url() ?>/template/assets/img/gallery/gallery1.jpg" alt="Gallery 1" width="400dp" height="300dp"></a>
+                    <img src="<?= base_url() ?>/template/assets/img/gallery/gallery2.jpg" alt="Gallery 2" width="400dp" height="300dp"></a>
+                </div>
+
+                <div class="col-sm-4 mx-5 my-5">
+                    <img src="<?= base_url() ?>/template/assets/img/gallery/gallery3.png" alt="Gallery 3" width="400dp" height="300dp"></a>
+                    <img src="<?= base_url() ?>/template/assets/img/gallery/gallery4.jpg" alt="Gallery 4" width="400dp" height="300dp"></a>
+
+                </div>
             </div>
-        </div><!-- row end-->
+        </div>
+
+    </div>
 </section>
 </div>
 
