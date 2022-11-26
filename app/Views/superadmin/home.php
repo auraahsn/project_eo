@@ -46,7 +46,7 @@
                             <th>ID User</th>
                             <th>Nama</th>
                             <th>Username</th>
-                            <th>Password</th>
+                            <!-- <th>Password</th> -->
                             <th>No. Telepon</th> 
                             <th>Role ID</th>
                             <th>Aksi</th>
@@ -59,7 +59,7 @@
                                 <td><?= $value->id_user ?></td>
                                 <td><?= $value->nama_user ?></td>
                                 <td><?= $value->username ?></td>
-                                <td><?= $value->password_user ?></td>
+                                <!-- <td><?= $value->password_user ?></td> -->
                                 <td><?= $value->no_telp ?></td>
                                 <td><?= $value->role_id ?></td>
                                 <td class="text-center" style="width:15%">
