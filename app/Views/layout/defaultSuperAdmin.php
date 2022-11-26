@@ -81,7 +81,7 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2022 <div class="bullet"></div> Developed by <a href="https://nauval.in/">YAMA</a>
+                    Copyright &copy; 2022 <div class="bullet"></div> Developed by <a href="">YAMA</a>
                 </div>
                 <div class="footer-right">
                     v1.0

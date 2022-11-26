@@ -71,7 +71,7 @@ class Filters extends BaseConfig
      */
     public $filters = [
         'isLoggedIn' =>['before'=>[
-            'home','pemesanan','pemesanan/*','events','events/*','portofolio','portofolio','about','customer/*','pemesanancustomer','pemesanancustomer/*'
+            'home','pemesanan','pemesanan/*','events','events/*','portofolio','portofolio','about','customer/*','pemesanancustomer','pemesanancustomer/*','homesuperadmin','homesuperadmin/*'
         ]]
     ];
 }

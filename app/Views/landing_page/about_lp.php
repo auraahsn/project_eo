@@ -60,8 +60,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <p>EO YAMA adalah sebuah perusahaan yang bergerak di bidang
-                                    event organizer dan event planner. Sejarah perusahan ini
-                                    didirikan pada tahun 2022. EO YAMA membantu Anda membuat acara yang menyenangkan dan tak
+                                    event organizer dan event planner. EO YAMA membantu Anda membuat acara yang menyenangkan dan tak
                                     terlupakan, sepak terjang kami sebagai jasa Event Organizer
                                     Online dan Offline profesional selalu memberikan kepuasan
                                     terhadap pelanggan untuk menciptakan suasana acara yang tidak
@@ -181,10 +180,10 @@
 
                 <footer class="main-footer">
                     <div class="footer-left">
-                        Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="https://nauval.in/">EOYAMA</a>
+                        Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="">YAMA</a>
                     </div>
                     <div class="footer-right">
-                        2.3.0
+                        v1.0
                     </div>
                 </footer>
             </div>

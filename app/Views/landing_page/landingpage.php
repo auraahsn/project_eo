@@ -114,10 +114,10 @@
                                         <div class="media">
                                             <img class="mr-3 rounded" src="<?= base_url() ?>/template/assets/img/img_lp/img1.png" style="height: 250px; width:auto" alt="Generic placeholder image">
                                             <div class="media-body">
-                                                <h5 class="mt-0">EO YAMA Proffesional</h5>
+                                                <h5 class="mt-0">EO YAMA Profesional</h5>
                                                 <p class="mb-0">EO YAMA melayani jasa event organizer (EO) yang telah berpengalaman dalam menyelenggarakan berbagai event indoor ataupun outdoor, seperti bazaar produk perusahaan, wisuda kuliah, konser musik, hingga event outbound dengan konsep yang unik dan menarik</p><br>
                                                 <p class="mb-0">Tim EO YAMA akan merancang acara sesuai dengan kebutuhan Anda dan membuka diskusi untuk bertukar ide rancangan acara yang akan diselenggarakan nanti. Beberapa perusahaan telah mempercayakan EO kami untuk menyelenggarakan event bazaar serta kegiatan outbound dan kami juga sebagai EO profesional selalu menentukan venue yang tepat untuk acara Anda. Kami tidak hanya berkontribusi untuk acara perkantoran saja, tapi kami juga memberikan acara yang meriah untuk anak-anak sekolah/kuliah, nikah online atau offline, reuni keluarga, pagelaran, hingga beberapa jenis acara yang meriah dan mengesankan</p><br>
-                                                <p class="mb-0">Diskusikan konsep event yang Anda inginkan kepada tim EO kami di Jakarta sehingga dapat menentukan konsep yang berbeda dari lainnya dan tidak akan terlupakan!</p><br>
+                                                <p class="mb-0">Diskusikan konsep event yang Anda inginkan kepada tim EO kami di Lampung sehingga dapat menentukan konsep yang berbeda dari lainnya dan tidak akan terlupakan!</p><br>
                                             </div>
                                         </div>
                                     </div>
@@ -203,10 +203,10 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="https://nauval.in/">EOYAMA</a>
+                    Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="">YAMA</a>
                 </div>
                 <div class="footer-right">
-                    2.3.0
+                    v1.0
                 </div>
             </footer>
         </div>

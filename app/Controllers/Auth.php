@@ -61,15 +61,14 @@ class Auth extends BaseController
     public function registerProcess(){
         $val = $this->validate(
             [
-                'nama_user' => 'required',
+                
                 'username' => [
                       'rules' => 'required|is_unique[users.username]',
                       'errors' =>[
                           'is_unique' =>'{field} sudah dipakai'
                                   ]
                               ],
-                'password_user' => 'required',
-                'no_telp' => 'required',
+                
             ],
           );
   

@@ -121,10 +121,10 @@
 
                 <footer class="main-footer">
                     <div class="footer-left">
-                        Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="https://nauval.in/">EOYAMA</a>
+                        Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="">YAMA</a>
                     </div>
                     <div class="footer-right">
-                        2.3.0
+                        v1.0
                     </div>
                 </footer>
             </div>
