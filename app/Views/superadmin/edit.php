@@ -42,13 +42,13 @@
                     </div>
                     <div class="form-group">
                         <label>Role ID</label>
-                        <select name="role_id" id="role_id" >
+                        <select name="role_id" id="role_id">
                             <option value="<?= $users->role_id ?>"><?php echo $users->role_id ?></option>
-  <option value="1">1-Pelanggan</option>
-  <option value="2">2-Admin</option>
-  <option value="3">3-Superadmin</option>
-  
-</select>
+                            <option value="1">1-Pelanggan</option>
+                            <option value="2">2-Admin</option>
+                            <option value="3">3-Superadmin</option>
+
+                        </select>
                         <!-- <input type="text" name="role_id" class="form-control" value="<?= $users->role_id ?>" required> -->
                     </div>
                     <div>
