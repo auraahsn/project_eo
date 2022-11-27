@@ -70,24 +70,18 @@
                                             <img class="d-block w-100" src="<?= base_url() ?>/template/assets/img/img_lp/image1.jpeg" alt="First slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Ulang Tahun Perusahaan</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img class="d-block w-100" src="<?= base_url() ?>/template/assets/img/img_lp/image2.jpg" alt="Second slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Seminar Nasional</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img class="d-block w-100" src="<?= base_url() ?>/template/assets/img/img_lp/image3.jpg" alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Ulang Tahun</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </div>
                                         </div>
                                     </div>
