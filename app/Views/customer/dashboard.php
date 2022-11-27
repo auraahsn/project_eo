@@ -20,7 +20,7 @@
     </div>
 
     <div class="section-body">
-        <h2 class="section-title">What We Provides For Offline Events</h2>
+        <h2 class="section-title">What We Provides For Events</h2>
         <!-- Testimoni -->
         <div class="row">
             <div class="col-12 col-md-4 col-lg-4 col-sm-4">

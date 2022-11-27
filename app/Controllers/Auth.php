@@ -12,9 +12,9 @@ class Auth extends BaseController
 
     public function login()
     {
-    if(session('id_user')){
-        return redirect()->to(site_url('home'));
-    }
+    // if(session('id_user')){
+    //     return redirect()->to(site_url('home'));
+    // }
         return view('auth/login');
     }
 
