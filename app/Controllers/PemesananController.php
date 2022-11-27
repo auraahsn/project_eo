@@ -6,16 +6,19 @@ class PemesananController extends BaseController
 {
     public function index()
     {
-
+    
         $builder = $this->db->table('pemesanan');
         $query   = $builder->get()->getResult();
         $data['pemesanan'] = $query;
         return view('pemesanan/list', $data);
-        //print_r($query->getResult());
+        //print_r($query->getResult());  
     }
     public function create()
     {
-        return view('pemesanan/add');
+        $builder = $this->db->table('users');
+        $query   = $builder->get()->getResult();
+        $data['users'] = $query;
+        return view('pemesanan/add',$data);
     }
     public function store()
     {

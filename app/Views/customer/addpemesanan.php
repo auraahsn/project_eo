@@ -25,15 +25,21 @@
                     <?= csrf_field() ?>
                     <div class="form-group">
                         <label>ID Pemesan</label>
-                        <input type="text" name="id_user"  class="form-control" required autofocus>
+                        <select name="id_user" class="form-control">
+                                    <option value="">Pilih Pemesan </option>
+                                    <?php foreach ($users as $us) : ?>
+                                        <option value="<?php echo $us->id_user ?>"><?php echo $us->id_user ?>-<?php echo $us->username ?></option>
+                                    <?php endforeach; ?>
+                                </select>  
+                        <!-- <input type="text" name="id_user"  class="form-control" required autofocus> -->
                     </div>
                     <div class="form-group">
                         <label>Nama Pemesan</label>
-                        <input type="text" name="nama_pemesan" class="form-control" required autofocus>
+                        <input type="text" name="nama_pemesan" value="<?php echo $us->nama_user ?>" class="form-control" required autofocus>
                     </div>
                     <div class="form-group">
                         <label>Telepon</label>
-                        <input type="text" name="telepon" class="form-control" required>
+                        <input type="text" name="telepon" value="<?php echo $us->no_telp ?>" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Jenis Acara</label>

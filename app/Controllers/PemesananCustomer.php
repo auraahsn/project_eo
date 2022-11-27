@@ -15,7 +15,11 @@ class PemesananCustomer extends BaseController
     }
     public function create()
     {
-        return view('customer/addpemesanan');
+        $session = session();
+        $builder = $this->db->table('users');
+        $query   = $builder->where('id_user', $session->id_user)->get()->getResult();
+        $data['users'] = $query;
+        return view('customer/addpemesanan',$data);
     }
     public function store()
     {

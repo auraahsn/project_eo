@@ -53,10 +53,17 @@
                         <textarea name="deskripsi_acara" class="form-control" cols="30" rows="10"><?= $pemesanan->deskripsi_acara ?></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Status</label>
-                        <input type="text" name="status" value="<?= $pemesanan->status ?>" class="form-control">
+                        <label>Status</label><br>
+                        <select name="status" id="status">
+                            <option value="<?= $pemesanan->status ?>"><?= $pemesanan->status ?></option>
+                            <option value="Pending">Pending</option>
+                            <option value="Acc">Acc</option>
+                            <option value="Decline">Decline</option>
+                        </select>
                     </div>
+                        
                     <div>
+
                         <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Save</button>
                         <button type="reset" class="btn btn-secondary">Reset</button>
                     </div>

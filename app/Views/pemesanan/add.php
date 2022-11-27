@@ -25,8 +25,12 @@
                     <?= csrf_field() ?>
                     <div class="form-group">
                         <label>ID Pemesan</label>
-                        <input type="text" name="id_user" class="form-control" required autofocus>
-                    </div>
+                        <select name="id_user" class="form-control">
+                                    <option value="">Pilih Pemesan </option>
+                                    <?php foreach ($users as $us) : ?>
+                                        <option value="<?php echo $us->id_user ?>"><?php echo $us->id_user ?>-<?php echo $us->username ?></option>
+                                    <?php endforeach; ?>
+                                </select>        </div>
                     <div class="form-group">
                         <label>Nama Pemesan</label>
                         <input type="text" name="nama_pemesan" class="form-control" required autofocus>
@@ -52,8 +56,13 @@
                         <textarea name="deskripsi_acara" class="form-control" cols="30" rows="10"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Status</label>
-                        <input type="text" name="status" class="form-control">
+                        <label>Status</label><br>
+                        <select name="status" id="status">
+                            <option value="">--Pilih Status--</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Acc">Acc</option>
+                            <option value="Decline">Decline</option>
+                        </select>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Save</button>
