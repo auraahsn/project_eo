@@ -21,7 +21,8 @@
                 <h4>Tambah Data User</h4>
             </div>
             <div class="card-body col-md-6">
-                <form action="<?= site_url('homesuperadmin') ?>" method="post" autocomplete="off">
+                <form action="<?= site_url('homesuperadmin') ?>" method="post" autocomplete="off" class="needs-validation" novalidate="">
+                    <?= $validate->listErrors() ?>
                     <?= csrf_field() ?>
                     <div class="form-group">
                         <label>Nama</label>
