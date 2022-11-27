@@ -33,8 +33,8 @@
                         <input type="text" name="username" class="form-control" value="<?= $users->username ?>" required autofocus>
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password_user" class="form-control" value="<?= $users->password_user ?>" required>
+                        <!-- <label>Password</label> -->
+                        <input type="hidden" name="password_user" class="form-control" value="<?= $users->password_user ?>" required>
                     </div>
                     <div class="form-group">
                         <label>No. Telepon</label>
@@ -42,7 +42,14 @@
                     </div>
                     <div class="form-group">
                         <label>Role ID</label>
-                        <input type="text" name="role_id" class="form-control" value="<?= $users->role_id ?>" required>
+                        <select name="role_id" id="role_id" >
+                            <option value="<?= $users->role_id ?>"><?php echo $users->role_id ?></option>
+  <option value="1">1-Pelanggan</option>
+  <option value="2">2-Admin</option>
+  <option value="3">3-Superadmin</option>
+  
+</select>
+                        <!-- <input type="text" name="role_id" class="form-control" value="<?= $users->role_id ?>" required> -->
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Save</button>
