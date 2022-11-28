@@ -52,7 +52,7 @@ class SuperAdminController extends BaseController
             'username' => $this->request->getPost('username'),
             'password_user' => password_hash($this->request->getPost('password_user'), PASSWORD_DEFAULT),
             'no_telp' => $this->request->getPost('no_telp'),
-            'role_id' => '1',
+            'role_id' => $this->request->getPost('role_id'),
         );
         $model = new UsersModel;
         $model->insert($data);
