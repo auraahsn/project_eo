@@ -19,7 +19,7 @@ class FullCalendar extends BaseController
             $data['data'][$key]['title'] = $value->title;
             $data['data'][$key]['start'] = $value->start_date;
             $data['data'][$key]['end'] = $value->end_date;
-            $data['data'][$key]['backgroundColor'] = "#DD5353";
+            $data['data'][$key]['backgroundColor'] = "#0000FF";
         }        
       return view('calendar',$data);
     }
